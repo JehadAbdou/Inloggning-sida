@@ -1,4 +1,4 @@
-Inlogging sid by Jehad:
+Inlogging sida by Jehad:
 index.html har jag delat till två delar:
 1-fösta div med class main som jag har använt för log in sida där finns  två input 1 för användare namn och den andra för lösenord, och en login knapp.
 2-andra div med class inlogged  som har "Welcome..." meddelande och en logout knapp som rensar all sparade info till användare.
