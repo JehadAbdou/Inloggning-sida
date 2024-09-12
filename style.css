@@ -1,0 +1,102 @@
+body {
+  background-color: rgb(241, 241, 222);
+}
+.main {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  margin-left: 2rem;
+  background-color: rgb(240, 228, 211);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  color: rgb(73, 63, 63);
+  border: 2px solid transparent;
+  box-shadow: 20px 20px 20px 20px rgb(30, 30, 27);
+  border-radius: 8px;
+}
+button {
+  background-color: rgb(132, 132, 97);
+  padding: 2px 16px 2px 16px;
+  border-radius: 5px;
+  border: 6px solid transparent;
+  box-shadow: 0 0 10px rgb(29, 29, 22);
+  cursor: pointer;
+  font-weight: bold;
+  color: rgb(237, 231, 231);
+  transition: 0.3s ease;
+}
+button:hover {
+  background-color: rgb(175, 175, 142);
+  border: 12px solid transparent;
+  box-shadow: 0 0 10px rgb(71, 71, 57);
+  border-radius: 8px;
+  font-size: large;
+}
+input {
+  border-radius: 1rem;
+  height: 1.5rem;
+  width: 14rem;
+  border: none;
+  box-shadow: 4px 4px 4px black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.login {
+  display: none;
+}
+.logout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.spinner1 {
+  background-color: transparent;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border-top-color: rgb(120, 138, 2);
+  border-bottom-color: rgb(0, 0, 0);
+  border-top-width: 5px;
+  border-bottom-width: 7px;
+  border-top-style: dotted;
+  border-bottom-style: dotted;
+  align-content: center;
+  animation: spin2 infinite 2.5s linear;
+  position: absolute;
+  margin-top: -10px;
+  margin-left: 4px;
+}
+.loading {
+  transform-style: preserve-3d;
+}
+.spinner2 {
+  position: absolute;
+  background-color: transparent;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border-right-color: rgb(120, 138, 2);
+  border-left-color: rgb(0, 0, 0);
+  border-right-width: 5px;
+  border-left-width: 5px;
+  border-right-style: dotted;
+  border-left-style: dotted;
+  animation: spin infinite 5s linear;
+}
+@keyframes spin {
+  0% {
+    transform: rotateY(0deg) rotateZ(0deg); /* Initial rotation */
+  }
+  100% {
+    transform: rotateY(360deg) rotateZ(360deg); /* Full rotation */
+  }
+}
+@keyframes spin2 {
+  0% {
+    transform: rotateZ(0deg) rotateX(0deg); /* Initial rotation */
+  }
+  100% {
+    transform: rotateZ(360deg) rotateX(360deg); /* Full rotation */
+  }
+}
