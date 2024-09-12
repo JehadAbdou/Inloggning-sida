@@ -8,13 +8,13 @@ const user = "test";
 const pass = "1234";
 let isLogged = false;
 
-isLogged = localStorage.getItem("islogged") === "true";
+isLogged = localStorage.getItem("islogged");
 
 // login/logout funktioner//
 
 const logIn = () => {
-  main.classList.toggle("login");
-  inLogged.classList.toggle("logout");
+  main.classList.add("login");
+  inLogged.classList.add("logout");
   localStorage.setItem("username", user);
   localStorage.setItem("password", pass);
   localStorage.setItem("islogged", "true");
